@@ -1,3 +1,5 @@
+/**어플리케이션 메인 액티비티 */
+
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -79,9 +81,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         };
+
+        
         findViewById(R.id.add).setOnClickListener(clickListener);
 
 
+        //버튼을 눌러 메모 기능으로 이동
         Button imageButton = (Button) findViewById(R.id.memo);
         imageButton.setOnClickListener(new View.OnClickListener(){
 
@@ -92,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        //지도 기능으로 이동
         Button mapButton = (Button) findViewById(R.id.maps);
         mapButton.setOnClickListener(new View.OnClickListener(){
 
@@ -106,9 +111,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * Today 반환
-     */
+    /** Today 반환*/
+
     private String getToday() {
         // 지정된 format 으로 string 표시
         long now = System.currentTimeMillis();
@@ -119,15 +123,14 @@ public class MainActivity extends AppCompatActivity {
         return CurDateFormat.format(mCalendar.getTime());
     }
 
-    /**
-     * D-day 반환
-     */
+    /**D-day 반환*/
+
     private String getDday(int a_year, int a_monthOfYear, int a_dayOfMonth) {
         // D-day 설정
         final Calendar ddayCalendar = Calendar.getInstance();
         ddayCalendar.set(a_year, a_monthOfYear, a_dayOfMonth);
 
-        // D-day 를 구하기 위해 millisecond 으로 환산하여 d-day 에서 today 의 차를 구한다.
+        // D-day 를 구하기 위해 millisecond 으로 환산하고 d-day 에서 today 의 차를 구한다.
         final long dday = ddayCalendar.getTimeInMillis() / ONE_DAY;
         final long today = Calendar.getInstance().getTimeInMillis() / ONE_DAY;
         long result = dday - today;
