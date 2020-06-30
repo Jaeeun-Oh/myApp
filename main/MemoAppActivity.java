@@ -5,9 +5,7 @@ import android.transition.Scene;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.io.FileNotFoundException;
 
 public class MemoAppActivity extends AppCompatActivity {

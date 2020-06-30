@@ -1,9 +1,7 @@
 /**어플리케이션 메인 액티비티 */
 
 package com.example.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
