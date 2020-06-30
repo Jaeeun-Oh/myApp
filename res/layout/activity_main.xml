@@ -1,3 +1,5 @@
+<!--메인 화면-->
+
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,6 +12,7 @@
     android:orientation="vertical">
 
 
+     <!--어플리케이션 이미지, 시간, 날짜 출력-->
 
     <ImageView
         android:id="@+id/title"
@@ -45,6 +48,9 @@
         tools:layout_editor_absoluteY="228dp"
         tools:text="2019/01/01" />
 
+
+        <!--버튼(d-day, 메모, 지도)-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,6 +79,8 @@
 
     </LinearLayout>
 
+
+    <!--캘린더 스크롤바-->
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
