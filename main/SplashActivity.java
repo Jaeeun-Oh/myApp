@@ -1,3 +1,5 @@
+/*어플리케이션 실행 시 첫 화면 동작 코드 */
+
 package com.example.myapplication;
 
 import android.app.Activity;
@@ -17,6 +19,8 @@ public class SplashActivity extends Activity {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
+
+        //2000동안 기다린 후 메인액티비티 실행
         startActivity(new Intent(this,MainActivity.class));
         finish();
     }
