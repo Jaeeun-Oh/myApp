@@ -1,5 +1,4 @@
 /*어플리케이션 실행 시 첫 화면 동작 코드 */
-
 package com.example.myapplication;
 
 import android.app.Activity;
